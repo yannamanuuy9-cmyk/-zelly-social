@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZELLY 🎀</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#fff7fc;color:#49364d;font-family:Arial,sans-serif}
+header{background:white;padding:18px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #f5d8ed}
+.logo{font-size:30px;font-weight:bold;color:#ec78b9}
+button{border:0;border-radius:20px;padding:11px 16px;background:#f6c5e5;color:#693c66;font-weight:bold}
+.stories{display:flex;gap:15px;overflow:auto;padding:18px;background:white}
+.story{text-align:center;min-width:65px;font-size:12px}
+.circle{width:60px;height:60px;border-radius:50%;border:3px solid #e99bd0;background:#efdafa;display:grid;place-items:center;font-size:25px}
+h2{padding:0 16px;color:#d96eae}
+.post{background:white;margin:15px;border-radius:18px;overflow:hidden;box-shadow:0 3px 12px #eacde5}
+.post-head{padding:14px;font-weight:bold}
+.photo{height:230px;background:linear-gradient(135deg,#f7b9dd,#d8c2f6);display:grid;place-items:center;font-size:65px}
+.actions{padding:14px}
+.actions button{margin-right:7px}
+nav{position:fixed;bottom:0;width:100%;background:white;display:flex;justify-content:space-around;padding:15px 5px;border-top:1px solid #f0d5e9}
+nav button{background:transparent;font-size:22px}
+main{padding-bottom:85px}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">ZELLY 🎀</div>
+<button onclick="alert('Mensagens em breve!')">✉️</button>
+</header>
+<h2>Stories ✨</h2>
+<div class="stories">
+<div class="story"><div class="circle">＋</div>Seu story</div>
+<div class="story"><div class="circle">🌸</div>Yanna</div>
+<div class="story"><div class="circle">🦋</div>Maria</div>
+<div class="story"><div class="circle">💗</div>Ana</div>
+<div class="story"><div class="circle">🐰</div>Lia</div>
+</div>
+<main>
+<h2>Para você 💕</h2>
+<div class="post">
+<div class="post-head">🌷 @yanna</div>
+<div class="photo">🎀🌸</div>
+<div class="actions">
+<button onclick="curtir(this)">♡ Curtir</button>
+<button onclick="alert('Comentários em breve!')">💬 Comentar</button>
+<button onclick="alert('Publicação salva!')">♡ Salvar</button>
+<p>Um cantinho para ser você mesma! 💗</p>
+</div>
+</div>
+<div class="post">
+<div class="post-head">🦋 @maria</div>
+<div class="photo">💜✨</div>
+<div class="actions">
+<button onclick="curtir(this)">♡ Curtir</button>
+<button onclick="alert('Comentários em breve!')">💬 Comentar</button>
+<p>Espalhando coisas boas! 🌸</p>
+</div>
+</div>
+</main>
+<nav>
+<button onclick="location.reload()">🏠</button>
+<button onclick="alert('Vídeos em breve!')">🎬</button>
+<button onclick="alert('Criar publicação em breve!')">＋</button>
+<button onclick="alert('Seu perfil em breve!')">👤</button>
+<button onclick="document.body.style.background='#f3e5ff'">🎨</button>
+</nav>
+<script>
+function curtir(botao){
+if(botao.innerText==='♡ Curtir'){botao.innerText='♥ Curtido'}
+else{botao.innerText='♡ Curtir'}
+}
+</script>
+</body>
+</html>
